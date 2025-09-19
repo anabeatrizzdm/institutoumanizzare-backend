@@ -48,6 +48,20 @@ DB_PASSWORD=postgres
 DB_NAME=umanizzare
 ```
 
+### 🔹 Observações
+
+- Rodando via Docker: as configurações do banco acima funcionam diretamente com o serviço PostgreSQL definido no docker-compose.yml.
+- Rodando localmente sem Docker: altere DB_HOST, DB_USER, DB_PASSWORD e DB_NAME para as credenciais do seu banco PostgreSQL local, por exemplo:
+
+
+```env
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=seu_usuario_local
+DB_PASSWORD=sua_senha_local
+DB_NAME=umanizzare_local
+```
+
 ---
 
 ## ▶️ Executando o projeto
