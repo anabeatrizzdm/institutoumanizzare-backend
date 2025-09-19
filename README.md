@@ -96,7 +96,7 @@ docker-compose up --build
 
 ```bash
 # Gerar nova migration
-npm run migration:generate -- src/migrations/NomeDaMigration
+npm run migration:generate -- src/database/migrations/NomeDaMigration
 
 # Rodar migrations
 npm run migration:run

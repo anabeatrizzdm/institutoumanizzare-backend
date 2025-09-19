@@ -19,9 +19,9 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
-    "migration:generate": "npm run typeorm -- migration:generate",
-    "migration:run": "npm run typeorm -- migration:run",
-    "migration:revert": "npm run typeorm -- migration:revert"
+    "migration:generate": "npm run typeorm -- migration:generate -d src/database/config/data-source.ts",
+    "migration:run": "npm run typeorm -- migration:run -d src/database/config/data-source.ts",
+    "migration:revert": "npm run typeorm -- migration:revert -d src/database/config/data-source.ts"
   },
   "dependencies": {
     "@fastify/multipart": "^9.2.1",
